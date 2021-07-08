@@ -1,0 +1,63 @@
+Adrien Donady, Mandelbrot set
+
+mathematician Benoit Mandelbrot, tribute to
+pioneer of fractal geometry
+
+set of complex numbers C
+
+f_{c}(z) = z^{2} + c    converges
+
+z_{0} = 0 critical point
+
+f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0))), ..., bounded in absolute value
+
+|Z_{n}| <= 2, all n
+
+compact because it is closed and contained in a close disk of radius 2 around
+the origin
+
+The intersection of M with the real axis is [-2, 1/4]
+M is the Mandelbrot set
+
+Z_{n} does not tent to infinity
+
+r_{max} = 2
+
+
+
+PLOTTING ALGORITHMS FOR THE MANDELBROT SET 
+
+Mandelbrot set images may be created by sampling the complex numbers and testing
+for each, point c. whether the sequence f_{c}(0), f_{c}(f_{c}(0)), goes to infinity
+
+
+Treating the real and imaginary parts of C as image coordinates on the complex plane,
+pixels may then be coloured according to how soon the sequence
+|f_{c}(0)|, |f_{c}(f_{c}(0))|,..., crosses an arbitrary chosen threshold.
+(the threshold has to be at least 2, but is otherwise arbitrary).
+
+most widely use and simplest algorith "escape time algorith" repeating
+calculations on each (x,y) point in the plot area.
+
+asotiated behavior calculation with pixel colour.
+
+
+COMPLEX NUMBERS
+
+LOGISTIC MAP
+
+JULIA SET
+
+
+INFINITY REPRESENTATION IN JAVA
+
+double inf = Double.POSITIVE_INFINITY;
+System.out.println(inf + 5);        # Infinity
+System.out.println(inf - inf);        # Same as Double.NaN
+System.out.println(inf * -1);        # Same as Double.NEGATIVE_INFINITY
+
+Integer myInf = Integer.MAX_VALUE;
+Integer myInf = Integer.MIN_VALUE;
+
+Further Reads
+https://github.com/cslarsen/mandelbrot-js

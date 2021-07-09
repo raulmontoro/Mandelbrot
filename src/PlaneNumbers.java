@@ -3,8 +3,8 @@
     Module |z| = (re^2 + im^2)^{1/2} */
     
 public class PlaneNumbers {
-    float real;
-    float imaginary;
+    static final float real;
+    static final float imaginary;
 
 
 }

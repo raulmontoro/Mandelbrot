@@ -1,27 +1,32 @@
-Adrien Donady, Mandelbrot set
+Mandelbrot set
+    Adrien Donady
+    tribute to mathematician pionner of fractal geometry Benoit Mandelbrot
 
-mathematician Benoit Mandelbrot, tribute to
-pioneer of fractal geometry
+    Mandelbrot set M are all complex number c 
 
-set of complex numbers C
+    all c ∈ M
 
-f_{c}(z) = z^{2} + c    converges
+    ẓ_{n+1} = z_{n}^2 + c   converges
+    |Z_{n}| <= 2, all n
 
-z_{0} = 0 critical point
+    f(z) = z^{2} + c
+    f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0))), ..., bounded in absolute value
 
-f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0))), ..., bounded in absolute value
+    converges
+    bounded in absolute value
+    compact because it is closed and contained in a close disk of radius 2 around the origin
 
-|Z_{n}| <= 2, all n
 
-compact because it is closed and contained in a close disk of radius 2 around
-the origin
+
+
 
 The intersection of M with the real axis is [-2, 1/4]
-M is the Mandelbrot set
 
 Z_{n} does not tent to infinity
 
+
 r_{max} = 2
+z_{0} = 0 critical point
 
 
 

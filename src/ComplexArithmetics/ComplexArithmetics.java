@@ -1,26 +1,39 @@
-/*  addition, substraction, multiplication, division
-    conjugate, inverse, absolute value -magnitude-, Argument -Phase-,
+/*  addition
+    substraction, 
+    multiplication, 
+    division
+    conjugate, 
+    inverse, 
+    absolute value -magnitude-, 
+
     polar representation,
+    modulus
+    Argument -Phase-,
 
     natural logarithm
     cosine
     power
     
     what is it?
-    java.math.BigDecimal */
+    java.math.BigDecimal 
+
+    all arithmetic methods static */
 
 package  ComplexNumbers;
 
-public class ComplexNumber {
+import java.lang.Math; /* sqrt, random */
 
+public class ComplexNumber {
     private float real;
     private float imaginary;
+    private float absoluteValue;
     
     /* Constructors */
 
     public ComplexNumber(float real, float imaginary) {
         this.real = real;
         this.imaginary = imaginary;
+        absoluteValue = abs(real, imaginary);
     }
 
     /* Modifiers */
@@ -71,6 +84,13 @@ public class ComplexNumber {
             + (x.imaginary * x.imaginary));
         imaginary = ((imaginary * x.real) - (real * x.imaginary)) / ((x.real * x.real)
             + (x.imaginary * x.imaginary));
+    }
+
+    /* Absolute Value -modulus */
+
+    void abs(float x, float y) {
+        /* sqrt() double arguments only in .lang.Math */
+        absoluteValue = (float)sqrt((double)(x*x + y*y));
     }
 
     /* Output */

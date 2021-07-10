@@ -1,4 +1,7 @@
-import ComplexNumbers.ComplexNumber;
+package Mandelbrot;
+
+import Mandelbrot.ComplexNumbers.ComplexNumber;
+import Mandelbrot.ComplexPlane.ComplexPlane;
 
 public class MainClass {
     public static void main(String[] args) {

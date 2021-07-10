@@ -1,28 +1,37 @@
 Mandelbrot set
     Adrien Donady
+    history
+        Adrien Donady, discoverer
+        tribute to mathematician pionner of fractal geometry Benoit Mandelbrot
 
-mathematician Benoit Mandelbrot, tribute to
-pioneer of fractal geometry
+    Mandelbrot set M are all complex number c 
 
-set of complex numbers C
+    all c ∈ M
 
-f_{c}(z) = z^{2} + c    converges
+    ẓ_{n+1} = z_{n}^2 + c, z_{0} = c
+    |Z_{n}| <= 2, all n,
+    converges
 
-z_{0} = 0 critical point
+    f(z) = z^{2} + c, all c ∈ M
+    f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0)))
+    bounded in absolute value
 
-f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0))), ..., bounded in absolute value
+    compact because it is closed and contained in a close disk of radius 2 around the origin
 
-|Z_{n}| <= 2, all n
+    elements not in M, diverge into infinity
 
-compact because it is closed and contained in a close disk of radius 2 around
-the origin
 
-The intersection of M with the real axis is [-2, 1/4]
-M is the Mandelbrot set
+    The intersection of M with the real axis is [-2, 1/4]
+    
+    Z_{n} does not tent to infinity
+    
+    
+    r_{max} = 2
+    z_{0} = 0 critical point
 
-Z_{n} does not tent to infinity
+CARTISIAN COORDINATES
 
-r_{max} = 2
+POLAR COORDINATES
 
 
 
@@ -59,6 +68,21 @@ System.out.println(inf * -1);        # Same as Double.NEGATIVE_INFINITY
 
 Integer myInf = Integer.MAX_VALUE;
 Integer myInf = Integer.MIN_VALUE;
+
+COMPLEX NUMBERS ALGORITHMICS
+    Additon
+    Substraction
+    Multiplication
+    Division
+
+    absolute value, modulus or magnitude
+    z = x + yi
+
+    r = |z| = (x^{2} + y^{2})^{1/2}, r ∈ R, Real Numbers
+    distance to the origin, complex plane
+        
+        
+
 
 Further Reads
 https://github.com/cslarsen/mandelbrot-js

@@ -1,4 +1,5 @@
-Adrien Donady, Mandelbrot set
+Mandelbrot set
+    Adrien Donady
 
 mathematician Benoit Mandelbrot, tribute to
 pioneer of fractal geometry

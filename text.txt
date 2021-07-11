@@ -1,3 +1,7 @@
+orbitales
+https://www.geogebra.org/m/mfewjrek
+https://math.hws.edu/eck/js/mandelbrot/MB.html
+
 https://en.wikipedia.org/wiki/Benoit_Mandelbrot
 
 Superior Mandelbrot set
@@ -8,11 +12,12 @@ Superior Mandelbrot set
 Mandelbrot set
     history
         Adrien Donady
-            Adrien Donady, discoverer
-            tribute to mathematician pionner of fractal geometry Benoit B. Mandelbrot
+        tribute to mathematician pionner of fractal geometry Benoit B. Mandelbrot
 
     Mandelbrot set
+    set of complex numbers
     M ⊆ C  
+    such as all elements
     ∀c ∈ M 
 
     converges
@@ -20,43 +25,13 @@ Mandelbrot set
     compact because it is closed and contained in a close disk of radius 2 around the origin
     Z_{n} does not tent to infinity
     elements not in M, diverge into infinity
-    
-    ẓ_{n+1} = z_{n}^2 + c, z_{0} = c
 
-    f_{c}(z) = z^{2} + c, ∀c ∈ M
+    ∀c ∈ M, z_{0} = 0
+
+    ẓ_{n+1} = z_{n}^2 + c, 
+    f_{c}(z) = z^{2} + c, 
     f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0)))
 
-
-
-
-    
-    |Z_{n}| <= 2, ∀n,
-    r_{max} = 2
-    
-
-    The intersection of M with the real axis is [-2, 1/4]
-    
-
-    
-
-
-    z = x + yi
-    |z| = (x∗x + y∗y)^{1/2}
-    z^{2} = x^{2} - y^{2} + 2∗x∗y∗i
-
-    x = r∗cos(θ)
-    y = r∗sen(θ)
-
-
-      Im 
-
-      |
-      |
-      |    
-------+------- Re
-      |
-      |
-      | 
 
 c = 0
     z_{n}       z_{n}^2    z_{n}^2 + c
@@ -67,16 +42,44 @@ n
 
 
 c = 1 + 1i
-    z_{n}       z_{n}^2    z_{n}^2 + c  |z_{n+1}|
+    z_{n}       z_{n}^2    z_{n+1}      |z_{n+1}|
 n                          
 0    0          0          1 + 1i       2^{1/2}
-1    1 + 1i     2i         1 + 3i       10^{1/2}  > bound
-2    1 + 3i    -8 + 6i    -7 + 7i       96^{1/2}
+1    1 + 1i     2i         1 + 3i       10^{1/2}    > bound
+2    1 + 3i    -8 + 6i    -7 + 7i       96^{1/2}    > bound
 3   -7 + 7i    98i         1 - 99i      
 
 c = -1 + 1i
-    z_{n}       z_{n}^2    z_{n}^2 + c  |z_{n+1}|
-n                          
+    z_{n}       z_{n}^2    z_{n+1}      |z_{n+1}|
+n   
+0    0           0          -1 + 1i     2^{1/2}
+1   -1 + 1i     -2i        -1 - 1i      2^{1/2}
+2   -1 - 1i     2i          -1 + 3i     10^{1/2}    > bound
+3   -1 + 3i     -8 - 4i     -9 - 3i     90^{1/2}    > bound
+
+c = 1 - 1i
+    z_{n}       z_{n}^2    z_{n+1}      |z_{n+1}|
+n   
+0   0           0          1 - 1i       2^{1/2}
+1   1 - 1i      -2i        1 - 3i       10^{1/2}    > bound
+2   1 - 3i      -8 + 6i    -7 + 5i      74^{1/2}    > bound
+
+
+
+
+
+
+
+    |Z_{n}| <= 2, ∀n,
+    r_{max} = 2
+    
+
+    The intersection of M with the real axis is [-2, 1/4]
+    
+
+    
+
+
 
 
 CARTISIAN COORDINATES
@@ -101,8 +104,6 @@ calculations on each (x,y) point in the plot area.
 
 asotiated behavior calculation with pixel colour.
 
-
-COMPLEX NUMBERS
 
 LOGISTIC MAP
 
@@ -136,3 +137,43 @@ COMPLEX NUMBERS ALGORITHMICS
 
 Further Reads
 https://github.com/cslarsen/mandelbrot-js
+
+
+
+COMPLEX NUMBERS
+
+    z = x + yi
+    |z| = (x∗x + y∗y)^{1/2}
+    z^{2} = x^{2} - y^{2} + 2∗x∗y∗i
+
+    x = r∗cos(θ)
+    y = r∗sen(θ)
+
+
+      Im 
+
+      |
+      |
+      |    
+------+------- Re
+      |
+      |
+      | 
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+

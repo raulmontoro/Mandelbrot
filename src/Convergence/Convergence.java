@@ -1,4 +1,7 @@
 package Mandelbrot.Convergence;
+
+import Mandelbrot.ComplexNumber.ComplexNumber;
+
 /* 
     ẓ_{n+1} = z_{n}^2 + c, z_{0} = c
     |Z_{n}| <= 2, all n,
@@ -12,8 +15,20 @@ recursive function implementation,
 base case  number of invariant significant figures */
 
 public class Convergence {
-    point c
-    ComplexPoint func(ComplexPoint z, ComplexPoint c) {
+    bool func(ComplexNumber z, ComplexNumber c) {
+        float aux = absoluteValue(z);
+        boolean converg;
         
+        /* Base Case */
+        if (aux > 2) {
+            converg = false;
+        }
+        else {
+            z.multiplication(z);
+            z.addition(c);
+            bool coverg_aux = func(z, c);
+        }
     }
+
+    return converg;
 }

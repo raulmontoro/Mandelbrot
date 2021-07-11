@@ -1,33 +1,83 @@
+https://en.wikipedia.org/wiki/Benoit_Mandelbrot
+
+Superior Mandelbrot set
+    Journal
+        Chaos, Solitorns and Fractals, 2008, 36, 2, 237-245
+        https://www.sciencedirect.com/science/article/abs/pii/S0960077906006060?via%3Dihub
+
 Mandelbrot set
-    Adrien Donady
     history
-        Adrien Donady, discoverer
-        tribute to mathematician pionner of fractal geometry Benoit Mandelbrot
+        Adrien Donady
+            Adrien Donady, discoverer
+            tribute to mathematician pionner of fractal geometry Benoit B. Mandelbrot
 
-    Mandelbrot set M are all complex number c 
+    Mandelbrot set
+    M ⊆ C  
+    ∀c ∈ M 
 
-    all c ∈ M
-
-    ẓ_{n+1} = z_{n}^2 + c, z_{0} = c
-    |Z_{n}| <= 2, all n,
     converges
-
-    f(z) = z^{2} + c, all c ∈ M
-    f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0)))
     bounded in absolute value
-
     compact because it is closed and contained in a close disk of radius 2 around the origin
-
+    Z_{n} does not tent to infinity
     elements not in M, diverge into infinity
+    
+    ẓ_{n+1} = z_{n}^2 + c, z_{0} = c
 
+    f_{c}(z) = z^{2} + c, ∀c ∈ M
+    f_{c}(0), f_{c}(f_{c}(0)), f_{c}(f_{c}(f_{c}(0)))
+
+
+
+
+    
+    |Z_{n}| <= 2, ∀n,
+    r_{max} = 2
+    
 
     The intersection of M with the real axis is [-2, 1/4]
     
-    Z_{n} does not tent to infinity
+
     
-    
-    r_{max} = 2
-    z_{0} = 0 critical point
+
+
+    z = x + yi
+    |z| = (x∗x + y∗y)^{1/2}
+    z^{2} = x^{2} - y^{2} + 2∗x∗y∗i
+
+    x = r∗cos(θ)
+    y = r∗sen(θ)
+
+
+      Im 
+
+      |
+      |
+      |    
+------+------- Re
+      |
+      |
+      | 
+
+c = 0
+    z_{n}       z_{n}^2    z_{n}^2 + c
+n                          
+0   0           0          0                   -> z_{0} critical point ???
+1   0           0          0           
+...
+
+
+c = 1 + 1i
+    z_{n}       z_{n}^2    z_{n}^2 + c  |z_{n+1}|
+n                          
+0    0          0          1 + 1i       2^{1/2}
+1    1 + 1i     2i         1 + 3i       10^{1/2}  > bound
+2    1 + 3i    -8 + 6i    -7 + 7i       96^{1/2}
+3   -7 + 7i    98i         1 - 99i      
+
+c = -1 + 1i
+    z_{n}       z_{n}^2    z_{n}^2 + c  |z_{n+1}|
+n                          
+
 
 CARTISIAN COORDINATES
 

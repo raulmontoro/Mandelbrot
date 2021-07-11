@@ -4,31 +4,23 @@
 
     plane define in polar coordinates, maybe translated to cartesian after */
 
-package ComplexPlane;
+package Mandelbrot.ComplexPlane;
+
+import Mandelbrot.ComplexNumber.ComplexNumber;
     
 public class ComplexPlane {
     /* plane defined by two points */
-    float real1;
-    float imaginary1;
+    ComplexNumber A;
+    ComplexNumber B;
 
-    float real2;
-    float imaginary2;
-    
     /* bound radius 2, not cartisians */
     ComplexPlane() {
-        real1 = -2.1;
-        imaginary1 = 2.1;
-
-        real2 = 2.1;
-        imaginary2 = -2.1;
+        A = ComplexNumber(-2.1, 2.1);
+        B = ComplexNumber(2.1, -2.1);
     }
     
-    ComplexPlane(float x1, float y1, float x2, float y2) {
-        real1 = -2.1;
-        imaginary1 = 2.1;
-
-        real2 = 2.1;
-        imaginary2 = -2.1;
+    ComplexPlane(ComplexNumber a, ComplexNumber b) {
+        A = a;
+        B = b;
     }
-
 }

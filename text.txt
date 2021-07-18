@@ -1,20 +1,18 @@
-orbitales
-https://www.geogebra.org/m/mfewjrek
-https://math.hws.edu/eck/js/mandelbrot/MB.html
+ORBITALES
+    https://www.geogebra.org/m/mfewjrek
+    https://math.hws.edu/eck/js/mandelbrot/MB.html
+    https://en.wikipedia.org/wiki/Benoit_Mandelbrot
 
-https://en.wikipedia.org/wiki/Benoit_Mandelbrot
-
-Superior Mandelbrot set
-    Journal
+SUPERIOR MANDELBROT SET
         Chaos, Solitorns and Fractals, 2008, 36, 2, 237-245
         https://www.sciencedirect.com/science/article/abs/pii/S0960077906006060?via%3Dihub
 
-Mandelbrot set
+
+MANDELBROT SET
     history
         Adrien Donady
         tribute to mathematician pionner of fractal geometry Benoit B. Mandelbrot
 
-    Mandelbrot set
     set of complex numbers
     M ⊆ C  
     such as all elements
